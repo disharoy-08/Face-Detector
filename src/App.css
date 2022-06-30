@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
-  flex-direction: column;
+}
+canvas{
+ /* background-color: red; */
+  position: absolute;
+}
+
+.navbar{
+  height: 50px;
+  background-color: rgb(41, 210, 75);
+  display: flex;
+  align-items: center;
+  color: rgb(13, 13, 135);
+  font-weight: bold;
+  padding: 0px 100px;
+  font-size: 27px;
+}
+.newPostCard{
+  height: 100vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.addPost{
+  display: flex;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addImg{
+  width: 35px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+.postForm{
+  display: flex;
+  flex-direction: column;
+}
+.avatar{
+  width: 75px;
+  height:75px;
+  border-radius: 50px;
+  margin-right: 20px;
+}
+.postInput{
+  height: 30px;
+   border: none; 
+  margin-bottom: 10px;
+}
+.container {
+ /* height: calc(100vh - 50px); */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
